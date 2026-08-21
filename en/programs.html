@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>window.__resources={"https://unpkg.com/react@18.3.1/umd/react.production.min.js":"../vendor/react.production.min.js","https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js":"../vendor/react-dom.production.min.js"};</script>
+<script src="../support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="../_ds/modernist-f1cda495-2d04-4f66-8b52-eb0641f6cce6/styles.css">
+<script src="../_ds/modernist-f1cda495-2d04-4f66-8b52-eb0641f6cce6/_ds_bundle.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&amp;family=Gothic+A1:wght@400;500;700;800&amp;family=IBM+Plex+Sans+KR:wght@400;500;700&amp;display=swap">
+<script src="../image-slot.js"></script>
+<style>
+:root { --color-bg:#f3ecdd; --font-heading:"Gothic A1","IBM Plex Sans KR","Noto Sans KR",sans-serif; --font-body:"IBM Plex Sans KR","Noto Sans KR",sans-serif; --font-tech:"Chakra Petch","IBM Plex Sans KR",sans-serif; --color-accent:#d64533; --color-accent-100:oklch(0.96 0.02 30); --color-accent-200:oklch(0.92 0.045 30); --color-accent-300:oklch(0.85 0.08 30); --color-accent-400:oklch(0.74 0.13 30); --color-accent-500:#d64533; --color-accent-600:oklch(0.54 0.17 30); --color-accent-700:oklch(0.47 0.15 30); --color-accent-800:oklch(0.39 0.12 30); --color-accent-900:oklch(0.3 0.08 30); }
+.btn-primary { color:var(--color-bg); }
+.btn, .tag { white-space:nowrap; }
+.nav { position:sticky; top:0; z-index:50; background:var(--color-bg); padding-left:0; padding-right:0; }
+.nav-inner { flex:1; display:flex; align-items:center; gap:var(--space-4); max-width:1200px; margin:0 auto; padding:0 clamp(20px,5vw,72px); }
+.nav-links { display:flex; align-items:center; gap:var(--space-4); margin-left:auto; }
+[style*="--font-heading"] { font-weight:800 !important; }
+[style*="uppercase"] { font-family:var(--font-tech); }
+.nav-toggle, .nav-burger { display:none; }
+@media (max-width:900px) {
+  .nav-burger { display:flex; flex-direction:column; align-items:center; justify-content:center; gap:5px; width:40px; height:40px; margin-left:4px; cursor:pointer; }
+  .nav-burger span { display:block; width:22px; height:2px; background:currentColor; }
+  .nav-brand img { height:44px !important; }
+  .nav-links { display:none; position:absolute; left:0; right:0; top:100%; margin:0; background:var(--color-bg); border-bottom:2px solid var(--color-divider); flex-direction:column; align-items:flex-start; gap:14px; padding:16px clamp(20px,5vw,72px) 20px; }
+  .nav-toggle:checked ~ .nav-links { display:flex; }
+}
+@media (max-width:700px) {
+  [style*="1.1fr 1fr"], [style*="1.2fr 1fr"], [style*="1fr 1.2fr"], [style*="1.5fr 1fr"],
+  [style*="1fr 1fr"], [style*="240px 1fr"], [style*="repeat(3"] { grid-template-columns:1fr !important; }
+  [style*="1.1fr 1fr"] > *, [style*="1.2fr 1fr"] > *, [style*="1fr 1.2fr"] > *, [style*="1.5fr 1fr"] > *,
+  [style*="1fr 1fr"] > *, [style*="240px 1fr"] > *, [style*="repeat(3"] > * { min-width:0; }
+  main image-slot, main figure { max-width:100%; min-width:0; }
+}
+html { scroll-behavior:smooth; }
+.grayscale { transition: filter .35s ease; }
+.grayscale:hover { filter:none; }
+main a[style*="2px solid"] { transition: translate .18s ease, border-color .18s ease; }
+main a[style*="2px solid"]:hover { translate: 0 -3px; border-color: var(--color-accent-500) !important; }
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    main > section, main > figure { animation: sc-rise both; animation-timeline: view(); animation-range: entry 0% entry 35%; }
+  }
+}
+@keyframes sc-rise { from { opacity:.01; transform: translateY(28px); } to { opacity:1; transform:none; } }
+body { margin:0; background:var(--color-bg); color:var(--color-text); font-family:var(--font-body); text-wrap:pretty; }
+a { color:var(--color-accent-700); }
+a:hover { color:var(--color-accent-900); }
+</style>
+</helmet>
+<nav class="nav">
+<div class="nav-inner">
+  <a class="nav-brand" href="index.html" style="text-decoration:none;display:flex;align-items:center"><img src="../uploads/FOMA_beta_5.webp" alt="FOMA — Forms of Motors and Arts" style="height:56px;display:block;margin:-10px 0"></a>
+<input type="checkbox" id="nav-toggle" class="nav-toggle">
+<div class="nav-links">
+  <a href="exhibitions.html" style="text-decoration:none">Exhibitions</a>
+  <a href="collection.html" style="text-decoration:none">Collection</a>
+  <a href="programs.html" aria-current="page" style="text-decoration:none;color:var(--color-accent-700);font-weight:600">Programs</a>
+  <a href="news.html" style="text-decoration:none">News</a>
+  <a href="about.html" style="text-decoration:none">Our Story</a>
+  <a href="visit.html" style="text-decoration:none">Visit</a>
+  <a href="../programs.html" style="text-decoration:none;font-family:var(--font-tech);font-size:12px;letter-spacing:.1em">KO</a>
+</div>
+  <a class="btn btn-primary" href="https://m.booking.naver.com/booking/6/bizes/961204/items/5250433?area=plt" target="_blank" style="text-decoration:none">Book a Visit</a>
+<label for="nav-toggle" class="nav-burger" aria-label="Open menu"><span></span><span></span><span></span></label>
+</div>
+</nav>
+<main style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,72px)" data-screen-label="Programs">
+  <header style="padding:64px 0 40px;display:flex;flex-direction:column;gap:12px;border-bottom:2px solid var(--color-divider)">
+    <h1 style="font-family:var(--font-heading);font-weight:700;font-size:clamp(36px,4.5vw,60px);letter-spacing:-.01em;margin:0;line-height:1.05">Programs</h1>
+    <p style="font-size:16px;line-height:1.6;margin:0 0 24px;color:var(--color-neutral-700);max-width:56ch">Academies and lectures — open courses first.</p>
+  </header>
+  <section style="display:flex;flex-direction:column;gap:24px;margin-top:40px">
+    <div style="border:2px solid var(--color-divider);padding:24px;display:grid;grid-template-columns:auto 1fr auto;gap:20px;align-items:center">
+      <span class="tag tag-accent">Enrolling</span>
+      <div style="display:flex;flex-direction:column;gap:4px">
+        <b style="font-family:var(--font-heading);font-size:22px;letter-spacing:-.01em">FOMA Junior Academy</b>
+        <span style="font-size:14px;color:var(--color-neutral-700)">Opens September 2026 · applications open</span>
+      </div>
+      <a class="btn btn-primary" href="https://m.booking.naver.com/booking/6/bizes/961204/items/5250433?area=plt" target="_blank" style="text-decoration:none">Apply</a>
+    </div>
+    <div style="border:2px solid var(--color-divider);padding:24px;display:grid;grid-template-columns:auto 1fr auto;gap:20px;align-items:center">
+      <span class="tag tag-accent">Enrolling</span>
+      <div style="display:flex;flex-direction:column;gap:4px">
+        <b style="font-family:var(--font-heading);font-size:22px;letter-spacing:-.01em">PonyChung Design Academy 5</b>
+        <span style="font-size:14px;color:var(--color-neutral-700)">University students · free talent program · see the call for schedule and pre-assignment</span>
+      </div>
+      <a class="btn btn-primary" href="https://m.booking.naver.com/booking/6/bizes/961204/items/5250433?area=plt" target="_blank" style="text-decoration:none">Apply</a>
+    </div>
+    <div style="border:2px solid var(--color-divider);padding:24px;display:grid;grid-template-columns:auto 1fr auto;gap:20px;align-items:center">
+      <span class="tag tag-accent">Enrolling</span>
+      <div style="display:flex;flex-direction:column;gap:4px">
+        <b style="font-family:var(--font-heading);font-size:22px;letter-spacing:-.01em">FOMA Academy 13 · 14</b>
+        <span style="font-size:14px;color:var(--color-neutral-700)">Young students · one-year course · Intensive / Junior</span>
+      </div>
+      <a class="btn btn-primary" href="https://m.booking.naver.com/booking/6/bizes/961204/items/5250433?area=plt" target="_blank" style="text-decoration:none">Apply</a>
+    </div>
+    <div style="border:2px solid var(--color-divider);padding:24px;display:grid;grid-template-columns:auto 1fr auto;gap:20px;align-items:center">
+      <span class="tag tag-outline">Season ended</span>
+      <div style="display:flex;flex-direction:column;gap:4px">
+        <b style="font-family:var(--font-heading);font-size:22px;letter-spacing:-.01em">Design Masterclass</b>
+        <span style="font-size:14px;color:var(--color-neutral-700)">Adult lecture series · 2025 season ended · get notified for next season</span>
+      </div>
+      <a class="btn btn-ghost" href="news.html" style="text-decoration:none">Notify me</a>
+    </div>
+  </section>
+  <section style="margin-top:64px;display:flex;flex-direction:column;gap:20px">
+    <div style="display:flex;flex-direction:column;gap:8px">
+      <span style="font-size:13px;letter-spacing:.08em;text-transform:uppercase;font-weight:600;color:var(--color-accent-700)">Short Programs & Events</span>
+      <hr style="height:2px;border:0;margin:0;background:var(--color-divider)">
+    </div>
+    <div style="display:flex;flex-direction:column">
+      <div style="border-bottom:1px solid var(--color-divider);padding:14px 0;display:grid;grid-template-columns:96px 1fr;gap:16px;align-items:baseline">
+        <span class="tag tag-neutral">Annual</span>
+        <div style="display:flex;flex-direction:column;gap:2px"><b style="font-size:16px">FOMA-1 Design Grand Prix</b><span style="font-size:13px;color:var(--color-neutral-700)">Gravity model-car design race · 5th edition in 2025</span></div>
+      </div>
+      <div style="border-bottom:1px solid var(--color-divider);padding:14px 0;display:grid;grid-template-columns:96px 1fr;gap:16px;align-items:baseline">
+        <span class="tag tag-neutral">Workshop</span>
+        <div style="display:flex;flex-direction:column;gap:2px"><b style="font-size:16px">Upcycling Studio</b><span style="font-size:13px;color:var(--color-neutral-700)">Discarded materials into art — mosaic workshop</span></div>
+      </div>
+      <div style="border-bottom:1px solid var(--color-divider);padding:14px 0;display:grid;grid-template-columns:96px 1fr;gap:16px;align-items:baseline">
+        <span class="tag tag-neutral">Seasonal</span>
+        <div style="display:flex;flex-direction:column;gap:2px"><b style="font-size:16px">Holiday Specials</b><span style="font-size:13px;color:var(--color-neutral-700)">Season programs like 'Designers and Engineers Met in Nature'</span></div>
+      </div>
+      <div style="border-bottom:1px solid var(--color-divider);padding:14px 0;display:grid;grid-template-columns:96px 1fr;gap:16px;align-items:baseline">
+        <span class="tag tag-accent">Outreach</span>
+        <div style="display:flex;flex-direction:column;gap:2px"><b style="font-size:16px">Design Class for Slow Learners</b><span style="font-size:13px;color:var(--color-neutral-700)">For slow learners who dream of design and art, together with their families</span></div>
+      </div>
+      <div style="border-bottom:1px solid var(--color-divider);padding:14px 0;display:grid;grid-template-columns:96px 1fr;gap:16px;align-items:baseline">
+        <span class="tag tag-neutral">Ongoing</span>
+        <div style="display:flex;flex-direction:column;gap:2px"><b style="font-size:16px">Book Talks & Design Concerts</b><span style="font-size:13px;color:var(--color-neutral-700)">Meet the makers — Kim Kyung-hoon, Park Chan-hwi, Hyun Kwang-hoon and more</span></div>
+      </div>
+    </div>
+    <span style="font-size:13px;color:var(--color-neutral-700)">Enrollment dates are announced on the News page and Instagram.</span>
+  </section>
+  <section style="margin-top:64px;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px">
+    <figure style="margin:0;display:flex;flex-direction:column;gap:10px">
+      <div class="grayscale"><image-slot id="pg-1" src="../uploads/slots/pg-1.webp" shape="rect" style="width:100%;height:160px" placeholder="Academy class photo"></image-slot></div>
+      <figcaption style="font-size:13px;color:var(--color-neutral-700)">Academy in session</figcaption>
+    </figure>
+    <figure style="margin:0;display:flex;flex-direction:column;gap:10px">
+      <div class="grayscale"><image-slot id="pg-2" src="../uploads/slots/pg-2.webp" shape="rect" style="width:100%;height:160px" placeholder="Student work"></image-slot></div>
+      <figcaption style="font-size:13px;color:var(--color-neutral-700)">Student work</figcaption>
+    </figure>
+    <figure style="margin:0;display:flex;flex-direction:column;gap:10px">
+      <div><image-slot id="pg-3" shape="rect" style="width:100%;height:160px" src="../uploads/pasted-1787278975050-0.png" placeholder="FOMA-1 Grand Prix award"></image-slot></div>
+      <figcaption style="font-size:13px;color:var(--color-neutral-700)">FOMA-1 Design Grand Prix · gravity model-car racing</figcaption>
+    </figure>
+  </section>
+  <div style="margin-top:48px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;border-top:2px solid var(--color-divider);padding-top:20px">
+    <span style="font-size:14px;color:var(--color-neutral-700)">Past program records live in the archive</span>
+    <a class="btn btn-secondary" href="news.html" style="text-decoration:none">Archive →</a>
+  </div>
+  <footer style="border-top:2px solid var(--color-divider);margin-top:80px;padding:24px 0 48px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:13px;color:var(--color-neutral-700)">
+    <span>FOMA — Forms of Motors and Arts · 91 Hyangmoe-ro, Deogyang-gu, Goyang, Korea · +82 2-3158-4661</span>
+    <span><a href="https://www.instagram.com/foma_kr" target="_blank">Instagram @foma_kr</a> · <a href="https://www.facebook.com/FOMA-%EC%9E%90%EB%8F%99%EC%B0%A8%EB%94%94%EC%9E%90%EC%9D%B8%EB%AF%B8%EC%88%A0%EA%B4%80-Forms-of-Motors-and-Arts-183194038775497/" target="_blank">Facebook</a> · Reservation only · Closed Mondays</span>
+  </footer>
+</main>
+</x-dc>
+</body>
+</html>

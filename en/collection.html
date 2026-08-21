@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script>window.__resources={"https://unpkg.com/react@18.3.1/umd/react.production.min.js":"vendor/react.production.min.js","https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js":"vendor/react-dom.production.min.js"};</script>
-<script src="./support.js"></script>
+<script>window.__resources={"https://unpkg.com/react@18.3.1/umd/react.production.min.js":"../vendor/react.production.min.js","https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js":"../vendor/react-dom.production.min.js"};</script>
+<script src="../support.js"></script>
 </head>
 <body>
 <x-dc>
 <helmet>
-<link rel="stylesheet" href="_ds/modernist-f1cda495-2d04-4f66-8b52-eb0641f6cce6/styles.css">
-<script src="_ds/modernist-f1cda495-2d04-4f66-8b52-eb0641f6cce6/_ds_bundle.js"></script>
+<link rel="stylesheet" href="../_ds/modernist-f1cda495-2d04-4f66-8b52-eb0641f6cce6/styles.css">
+<script src="../_ds/modernist-f1cda495-2d04-4f66-8b52-eb0641f6cce6/_ds_bundle.js"></script>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&amp;family=Gothic+A1:wght@400;500;700;800&amp;family=IBM+Plex+Sans+KR:wght@400;500;700&amp;display=swap">
-<script src="image-slot.js"></script>
+<script src="../image-slot.js"></script>
 <style>
 :root { --color-bg:#f3ecdd; --font-heading:"Gothic A1","IBM Plex Sans KR","Noto Sans KR",sans-serif; --font-body:"IBM Plex Sans KR","Noto Sans KR",sans-serif; --font-tech:"Chakra Petch","IBM Plex Sans KR",sans-serif; --color-accent:#d64533; --color-accent-100:oklch(0.96 0.02 30); --color-accent-200:oklch(0.92 0.045 30); --color-accent-300:oklch(0.85 0.08 30); --color-accent-400:oklch(0.74 0.13 30); --color-accent-500:#d64533; --color-accent-600:oklch(0.54 0.17 30); --color-accent-700:oklch(0.47 0.15 30); --color-accent-800:oklch(0.39 0.12 30); --color-accent-900:oklch(0.3 0.08 30); }
 .btn-primary { color:var(--color-bg); }
@@ -55,74 +55,74 @@ a:hover { color:var(--color-accent-900); }
 </helmet>
 <nav class="nav">
 <div class="nav-inner">
-  <a class="nav-brand" href="index.html" style="text-decoration:none;display:flex;align-items:center"><img src="uploads/FOMA_beta_5.webp" alt="FOMA — Forms of Motors and Arts" style="height:56px;display:block;margin:-10px 0"></a>
+  <a class="nav-brand" href="index.html" style="text-decoration:none;display:flex;align-items:center"><img src="../uploads/FOMA_beta_5.webp" alt="FOMA — Forms of Motors and Arts" style="height:56px;display:block;margin:-10px 0"></a>
 <input type="checkbox" id="nav-toggle" class="nav-toggle">
 <div class="nav-links">
-  <a href="exhibitions.html" style="text-decoration:none">전시</a>
-  <a href="collection.html" aria-current="page" style="text-decoration:none;color:var(--color-accent-700);font-weight:600">컬렉션</a>
-  <a href="programs.html" style="text-decoration:none">프로그램</a>
-  <a href="news.html" style="text-decoration:none">소식</a>
-  <a href="about.html" style="text-decoration:none">FOMA 이야기</a>
-  <a href="visit.html" style="text-decoration:none">방문</a>
-  <a href="en/collection.html" style="text-decoration:none;font-family:var(--font-tech);font-size:12px;letter-spacing:.1em">EN</a>
+  <a href="exhibitions.html" style="text-decoration:none">Exhibitions</a>
+  <a href="collection.html" aria-current="page" style="text-decoration:none;color:var(--color-accent-700);font-weight:600">Collection</a>
+  <a href="programs.html" style="text-decoration:none">Programs</a>
+  <a href="news.html" style="text-decoration:none">News</a>
+  <a href="about.html" style="text-decoration:none">Our Story</a>
+  <a href="visit.html" style="text-decoration:none">Visit</a>
+  <a href="../collection.html" style="text-decoration:none;font-family:var(--font-tech);font-size:12px;letter-spacing:.1em">KO</a>
 </div>
-  <a class="btn btn-primary" href="https://m.booking.naver.com/booking/6/bizes/961204/items/5250433?area=plt" target="_blank" style="text-decoration:none">예약하기</a>
-<label for="nav-toggle" class="nav-burger" aria-label="메뉴 열기"><span></span><span></span><span></span></label>
+  <a class="btn btn-primary" href="https://m.booking.naver.com/booking/6/bizes/961204/items/5250433?area=plt" target="_blank" style="text-decoration:none">Book a Visit</a>
+<label for="nav-toggle" class="nav-burger" aria-label="Open menu"><span></span><span></span><span></span></label>
 </div>
 </nav>
-<main style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,72px)" data-screen-label="컬렉션">
+<main style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,72px)" data-screen-label="Collection">
   <section style="margin-top:48px;background:var(--color-neutral-900);color:var(--color-bg);padding:48px clamp(24px,4vw,56px);display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:center">
     <div style="display:flex;flex-direction:column;gap:14px;align-items:flex-start">
-      <span style="font-size:13px;letter-spacing:.08em;text-transform:uppercase;font-weight:600;color:var(--color-neutral-400)">시그니처 컬렉션</span>
-      <h1 style="font-family:var(--font-heading);font-weight:700;font-size:clamp(36px,4.5vw,60px);line-height:1.05;letter-spacing:-.01em;margin:0">포니 복원 프로젝트</h1>
-      <p style="font-size:15px;line-height:1.65;margin:0;color:var(--color-neutral-300);max-width:44ch">사라진 도면을 10년에 걸쳐 되살리다. 도면, 목형, 와이어 모델로 이어지는 복원의 전 과정.</p>
-      <a class="btn btn-primary" href="#series" style="text-decoration:none;background:var(--color-bg);color:var(--color-neutral-900);border-color:var(--color-bg)">스토리 보기</a>
+      <span style="font-size:13px;letter-spacing:.08em;text-transform:uppercase;font-weight:600;color:var(--color-neutral-400)">Signature Collection</span>
+      <h1 style="font-family:var(--font-heading);font-weight:700;font-size:clamp(36px,4.5vw,60px);line-height:1.05;letter-spacing:-.01em;margin:0">The Pony Restoration Project</h1>
+      <p style="font-size:15px;line-height:1.65;margin:0;color:var(--color-neutral-300);max-width:44ch">Lost drawings, revived over ten years — the full restoration, from drawings to master buck to wire model.</p>
+      <a class="btn btn-primary" href="#series" style="text-decoration:none;background:var(--color-bg);color:var(--color-neutral-900);border-color:var(--color-bg)">Read the Story</a>
     </div>
     <figure class="grayscale" style="margin:0">
-      <image-slot id="col-signature" shape="rect" style="width:100%;height:260px" placeholder="포니 목형 사진"></image-slot>
+      <image-slot id="col-signature" shape="rect" style="width:100%;height:260px" placeholder="Pony master buck photo"></image-slot>
     </figure>
   </section>
   <section id="series" style="margin-top:64px;display:flex;flex-direction:column;gap:20px">
     <div style="display:flex;gap:12px;flex-wrap:wrap;border-bottom:2px solid var(--color-divider);padding-bottom:20px">
-      <button type="button" class="btn btn-secondary">전체</button>
-      <button type="button" class="btn btn-ghost">클레이 모델</button>
-      <button type="button" class="btn btn-ghost">아트 드로잉</button>
-      <button type="button" class="btn btn-ghost">자연과 디자인</button>
+      <button type="button" class="btn btn-secondary">All</button>
+      <button type="button" class="btn btn-ghost">Clay Models</button>
+      <button type="button" class="btn btn-ghost">Art Drawings</button>
+      <button type="button" class="btn btn-ghost">Nature & Design</button>
     </div>
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;margin-top:8px">
       <div style="border:2px solid var(--color-divider);display:flex;flex-direction:column">
-        <div class="grayscale"><image-slot id="col-1" shape="rect" style="width:100%;height:170px" placeholder="테스타로사 클레이 사진"></image-slot></div>
+        <div class="grayscale"><image-slot id="col-1" shape="rect" style="width:100%;height:170px" placeholder="Testa Rossa clay photo"></image-slot></div>
         <div style="padding:16px 20px 20px;display:flex;flex-direction:column;gap:6px;align-items:flex-start">
-          <span class="tag tag-accent">클레이 모델</span>
-          <b style="font-family:var(--font-heading);font-size:20px;letter-spacing:-.01em">1958 페라리 테스타로사</b>
-          <span style="font-size:14px;color:var(--color-neutral-700)">1:1 클레이 · 실물 제작 과정 기록</span>
+          <span class="tag tag-accent">Clay Models</span>
+          <b style="font-family:var(--font-heading);font-size:20px;letter-spacing:-.01em">1958 Ferrari Testa Rossa</b>
+          <span style="font-size:14px;color:var(--color-neutral-700)">1:1 clay · a record of full-scale making</span>
         </div>
       </div>
       <div style="border:2px solid var(--color-divider);display:flex;flex-direction:column">
-        <div class="grayscale"><image-slot id="col-2" shape="rect" style="width:100%;height:170px" placeholder="알파로메오 8C 사진"></image-slot></div>
+        <div class="grayscale"><image-slot id="col-2" shape="rect" style="width:100%;height:170px" placeholder="Alfa Romeo 8C photo"></image-slot></div>
         <div style="padding:16px 20px 20px;display:flex;flex-direction:column;gap:6px;align-items:flex-start">
-          <span class="tag tag-accent">클레이 모델</span>
-          <b style="font-family:var(--font-heading);font-size:20px;letter-spacing:-.01em">1938 알파로메오 8C</b>
-          <span style="font-size:14px;color:var(--color-neutral-700)">전전(戰前) 곡면의 재해석</span>
+          <span class="tag tag-accent">Clay Models</span>
+          <b style="font-family:var(--font-heading);font-size:20px;letter-spacing:-.01em">1938 Alfa Romeo 8C</b>
+          <span style="font-size:14px;color:var(--color-neutral-700)">Pre-war curves, reinterpreted</span>
         </div>
       </div>
       <div style="border:2px solid var(--color-divider);display:flex;flex-direction:column">
-        <div class="grayscale"><image-slot id="col-3" shape="rect" style="width:100%;height:170px" placeholder="앵무조개 · 곡면 연구 사진"></image-slot></div>
+        <div class="grayscale"><image-slot id="col-3" shape="rect" style="width:100%;height:170px" placeholder="Nautilus · curve study photo"></image-slot></div>
         <div style="padding:16px 20px 20px;display:flex;flex-direction:column;gap:6px;align-items:flex-start">
-          <span class="tag tag-outline">자연과 디자인</span>
-          <b style="font-family:var(--font-heading);font-size:20px;letter-spacing:-.01em">앵무조개와 곡면</b>
-          <span style="font-size:14px;color:var(--color-neutral-700)">자연의 비례에서 차체의 선으로</span>
+          <span class="tag tag-outline">Nature & Design</span>
+          <b style="font-family:var(--font-heading);font-size:20px;letter-spacing:-.01em">The Nautilus and the Curve</b>
+          <span style="font-size:14px;color:var(--color-neutral-700)">From nature's proportions to the lines of a body</span>
         </div>
       </div>
     </div>
   </section>
   <section style="margin-top:64px;border-top:2px solid var(--color-divider);border-bottom:2px solid var(--color-divider);padding:20px 0;display:flex;align-items:center;gap:16px;flex-wrap:wrap">
-    <b style="font-family:var(--font-heading);font-size:20px;letter-spacing:-.01em;flex:1;min-width:240px">소장품 관람은 사전예약제로 운영됩니다</b>
-    <a class="btn btn-primary" href="https://m.booking.naver.com/booking/6/bizes/961204/items/5250433?area=plt" target="_blank" style="text-decoration:none">방문 예약</a>
+    <b style="font-family:var(--font-heading);font-size:20px;letter-spacing:-.01em;flex:1;min-width:240px">Viewing is by advance reservation only</b>
+    <a class="btn btn-primary" href="https://m.booking.naver.com/booking/6/bizes/961204/items/5250433?area=plt" target="_blank" style="text-decoration:none">Book a Visit</a>
   </section>
   <footer style="border-top:2px solid var(--color-divider);margin-top:80px;padding:24px 0 48px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:13px;color:var(--color-neutral-700)">
-    <span>FOMA — Forms of Motors and Arts · 경기 고양시 덕양구 향뫼로 91 · 02-3158-4661</span>
-    <span><a href="https://www.instagram.com/foma_kr" target="_blank">인스타그램 @foma_kr</a> · <a href="https://www.facebook.com/FOMA-%EC%9E%90%EB%8F%99%EC%B0%A8%EB%94%94%EC%9E%90%EC%9D%B8%EB%AF%B8%EC%88%A0%EA%B4%80-Forms-of-Motors-and-Arts-183194038775497/" target="_blank">페이스북</a> · 사전예약제 · 월요일 휴관</span>
+    <span>FOMA — Forms of Motors and Arts · 91 Hyangmoe-ro, Deogyang-gu, Goyang, Korea · +82 2-3158-4661</span>
+    <span><a href="https://www.instagram.com/foma_kr" target="_blank">Instagram @foma_kr</a> · <a href="https://www.facebook.com/FOMA-%EC%9E%90%EB%8F%99%EC%B0%A8%EB%94%94%EC%9E%90%EC%9D%B8%EB%AF%B8%EC%88%A0%EA%B4%80-Forms-of-Motors-and-Arts-183194038775497/" target="_blank">Facebook</a> · Reservation only · Closed Mondays</span>
   </footer>
 </main>
 </x-dc>
