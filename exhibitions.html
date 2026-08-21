@@ -14,24 +14,47 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&amp;family=Noto+Serif+KR:wght@500;600;700&amp;display=swap">
 <script src="image-slot.js"></script>
 <style>
-:root { --font-heading:"Noto Serif KR",serif; --font-body:"Archivo","Noto Sans KR",sans-serif; --color-accent:#e9b1a8; --color-accent-100:oklch(0.97 0.012 30); --color-accent-200:oklch(0.94 0.025 30); --color-accent-300:oklch(0.89 0.045 30); --color-accent-400:oklch(0.84 0.06 30); --color-accent-500:#e9b1a8; --color-accent-600:oklch(0.72 0.075 30); --color-accent-700:oklch(0.55 0.085 30); --color-accent-800:oklch(0.42 0.075 30); --color-accent-900:oklch(0.3 0.055 30); }
+:root { --color-bg:#f3ecdd; --font-heading:"Noto Serif KR",serif; --font-body:"Archivo","Noto Sans KR",sans-serif; --color-accent:#e9b1a8; --color-accent-100:oklch(0.97 0.012 30); --color-accent-200:oklch(0.94 0.025 30); --color-accent-300:oklch(0.89 0.045 30); --color-accent-400:oklch(0.84 0.06 30); --color-accent-500:#e9b1a8; --color-accent-600:oklch(0.72 0.075 30); --color-accent-700:oklch(0.55 0.085 30); --color-accent-800:oklch(0.42 0.075 30); --color-accent-900:oklch(0.3 0.055 30); }
 .btn-primary { color:var(--color-accent-900); }
 .btn, .tag { white-space:nowrap; }
-.nav > a:nth-of-type(2) { margin-left:auto; }
+.nav { position:sticky; top:0; z-index:50; background:var(--color-bg); padding-left:0; padding-right:0; }
+.nav-inner { flex:1; display:flex; align-items:center; gap:var(--space-4); max-width:1200px; margin:0 auto; padding:0 clamp(20px,5vw,72px); }
+.nav-links { display:flex; align-items:center; gap:var(--space-4); margin-left:auto; }
+.nav-toggle, .nav-burger { display:none; }
+@media (max-width:900px) {
+  .nav-burger { display:flex; flex-direction:column; align-items:center; justify-content:center; gap:5px; width:40px; height:40px; margin-left:4px; cursor:pointer; }
+  .nav-burger span { display:block; width:22px; height:2px; background:currentColor; }
+  .nav-brand img { height:44px !important; }
+  .nav-links { display:none; position:absolute; left:0; right:0; top:100%; margin:0; background:var(--color-bg); border-bottom:2px solid var(--color-divider); flex-direction:column; align-items:flex-start; gap:14px; padding:16px clamp(20px,5vw,72px) 20px; }
+  .nav-toggle:checked ~ .nav-links { display:flex; }
+}
+@media (max-width:700px) {
+  [style*="1.1fr 1fr"], [style*="1.2fr 1fr"], [style*="1fr 1.2fr"], [style*="1.5fr 1fr"],
+  [style*="1fr 1fr"], [style*="240px 1fr"], [style*="repeat(3"] { grid-template-columns:1fr !important; }
+  [style*="1.1fr 1fr"] > *, [style*="1.2fr 1fr"] > *, [style*="1fr 1.2fr"] > *, [style*="1.5fr 1fr"] > *,
+  [style*="1fr 1fr"] > *, [style*="240px 1fr"] > *, [style*="repeat(3"] > * { min-width:0; }
+  main image-slot, main figure { max-width:100%; min-width:0; }
+}
 body { margin:0; background:var(--color-bg); color:var(--color-text); font-family:var(--font-body); text-wrap:pretty; }
 a { color:var(--color-accent-700); }
 a:hover { color:var(--color-accent-900); }
 </style>
 </helmet>
 <nav class="nav">
+<div class="nav-inner">
   <a class="nav-brand" href="index.html" style="text-decoration:none;display:flex;align-items:center"><img src="uploads/FOMA_beta_5.webp" alt="FOMA — Forms Of Motors and Arts" style="height:56px;display:block;margin:-10px 0"></a>
+<input type="checkbox" id="nav-toggle" class="nav-toggle">
+<div class="nav-links">
   <a href="exhibitions.html" aria-current="page" style="text-decoration:none;color:var(--color-accent-700);font-weight:600">전시</a>
   <a href="collection.html" style="text-decoration:none">컬렉션</a>
   <a href="programs.html" style="text-decoration:none">프로그램</a>
   <a href="news.html" style="text-decoration:none">소식</a>
   <a href="about.html" style="text-decoration:none">FOMA 이야기</a>
   <a href="visit.html" style="text-decoration:none">방문</a>
+</div>
   <a class="btn btn-primary" href="https://booking.naver.com" target="_blank" style="text-decoration:none">예약하기</a>
+<label for="nav-toggle" class="nav-burger" aria-label="메뉴 열기"><span></span><span></span><span></span></label>
+</div>
 </nav>
 <main style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,72px)" data-screen-label="전시">
   <header style="padding:64px 0 32px;display:flex;flex-direction:column;gap:16px;border-bottom:2px solid var(--color-divider)">
