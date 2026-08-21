@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>window.__resources={"https://unpkg.com/react@18.3.1/umd/react.production.min.js":"vendor/react.production.min.js","https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js":"vendor/react-dom.production.min.js"};</script>
 <script src="./support.js"></script>
 </head>
 <body>
@@ -23,13 +24,13 @@ a:hover { color:var(--color-accent-900); }
 </style>
 </helmet>
 <nav class="nav">
-  <a class="nav-brand" href="FOMA 홈.dc.html" style="text-decoration:none;display:flex;align-items:center"><img src="uploads/FOMA_beta_5.webp" alt="FOMA — Forms Of Motors and Arts" style="height:56px;display:block;margin:-10px 0"></a>
-  <a href="FOMA 전시.dc.html" style="text-decoration:none">전시</a>
-  <a href="FOMA 컬렉션.dc.html" style="text-decoration:none">컬렉션</a>
-  <a href="FOMA 프로그램.dc.html" style="text-decoration:none">프로그램</a>
-  <a href="FOMA 소식.dc.html" style="text-decoration:none">소식</a>
-  <a href="FOMA 이야기.dc.html" aria-current="page" style="text-decoration:none;color:var(--color-accent-700);font-weight:600">FOMA 이야기</a>
-  <a href="FOMA 방문.dc.html" style="text-decoration:none">방문</a>
+  <a class="nav-brand" href="index.html" style="text-decoration:none;display:flex;align-items:center"><img src="uploads/FOMA_beta_5.webp" alt="FOMA — Forms Of Motors and Arts" style="height:56px;display:block;margin:-10px 0"></a>
+  <a href="exhibitions.html" style="text-decoration:none">전시</a>
+  <a href="collection.html" style="text-decoration:none">컬렉션</a>
+  <a href="programs.html" style="text-decoration:none">프로그램</a>
+  <a href="news.html" style="text-decoration:none">소식</a>
+  <a href="about.html" aria-current="page" style="text-decoration:none;color:var(--color-accent-700);font-weight:600">FOMA 이야기</a>
+  <a href="visit.html" style="text-decoration:none">방문</a>
   <a class="btn btn-primary" href="https://booking.naver.com" target="_blank" style="text-decoration:none">예약하기</a>
 </nav>
 <main style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,72px)" data-screen-label="FOMA 이야기">
@@ -40,13 +41,13 @@ a:hover { color:var(--color-accent-900); }
   </section>
   <section style="display:grid;grid-template-columns:1fr 1.2fr;gap:48px;align-items:center;padding:48px 0;border-bottom:1px solid var(--color-divider)">
     <figure class="grayscale" style="margin:0">
-      <image-slot id="story-1" shape="rect" style="width:100%;height:280px" placeholder="박종서 관장 인물 사진"></image-slot>
+      <image-slot id="story-1" src="uploads/slots/story-1.webp" shape="rect" style="width:100%;height:280px" placeholder="박종서 관장 인물 사진"></image-slot>
     </figure>
     <div style="display:flex;flex-direction:column;gap:10px;align-items:flex-start">
       <span style="font-size:13px;letter-spacing:.08em;text-transform:uppercase;font-weight:600;color:var(--color-accent-700)">01 · 사람</span>
       <h2 style="font-family:var(--font-heading);font-weight:700;font-size:clamp(26px,3vw,38px);letter-spacing:-.01em;margin:0;line-height:1.08">35년의 자동차 디자이너</h2>
       <p style="font-size:15px;line-height:1.7;margin:0;color:var(--color-neutral-700);max-width:52ch">포니에서 싼타페까지. 한국 자동차 디자인 1세대의 기록. 2016년 MOTOR TREND 인터뷰 발췌를 수록했습니다.</p>
-      <a href="FOMA 소식.dc.html" style="font-size:14px">인터뷰 전문 읽기 →</a>
+      <a href="news.html" style="font-size:14px">인터뷰 전문 읽기 →</a>
     </div>
   </section>
   <section style="display:grid;grid-template-columns:1.2fr 1fr;gap:48px;align-items:center;padding:48px 0;border-bottom:1px solid var(--color-divider)">
@@ -56,12 +57,12 @@ a:hover { color:var(--color-accent-900); }
       <p style="font-size:15px;line-height:1.7;margin:0;color:var(--color-neutral-700);max-width:52ch">스케치, 도면, 클레이. 결과가 아닌 여정을 수집합니다. 자동차 한 대가 태어나기까지의 손끝의 흔적이 이 미술관의 소장품입니다.</p>
     </div>
     <figure class="grayscale" style="margin:0">
-      <image-slot id="story-2" shape="rect" style="width:100%;height:280px" placeholder="스케치 / 복원 도면 사진"></image-slot>
+      <image-slot id="story-2" src="uploads/slots/story-2.webp" shape="rect" style="width:100%;height:280px" placeholder="스케치 / 복원 도면 사진"></image-slot>
     </figure>
   </section>
   <section style="display:grid;grid-template-columns:1fr 1.2fr;gap:48px;align-items:center;padding:48px 0">
     <figure class="grayscale" style="margin:0">
-      <image-slot id="story-3" shape="rect" style="width:100%;height:280px" placeholder="미술관 건축 외관 사진"></image-slot>
+      <image-slot id="story-3" src="uploads/slots/story-3.webp" shape="rect" style="width:100%;height:280px" placeholder="미술관 건축 외관 사진"></image-slot>
     </figure>
     <div style="display:flex;flex-direction:column;gap:10px;align-items:flex-start">
       <span style="font-size:13px;letter-spacing:.08em;text-transform:uppercase;font-weight:600;color:var(--color-accent-700)">03 · 공간</span>
