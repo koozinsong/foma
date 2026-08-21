@@ -11,14 +11,16 @@
 <helmet>
 <link rel="stylesheet" href="_ds/modernist-f1cda495-2d04-4f66-8b52-eb0641f6cce6/styles.css">
 <script src="_ds/modernist-f1cda495-2d04-4f66-8b52-eb0641f6cce6/_ds_bundle.js"></script>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&amp;family=Noto+Serif+KR:wght@500;600;700&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&amp;family=Gothic+A1:wght@400;500;700;800&amp;family=IBM+Plex+Sans+KR:wght@400;500;700&amp;display=swap">
 <style>
-:root { --color-bg:#f3ecdd; --font-heading:"Noto Serif KR",serif; --font-body:"Archivo","Noto Sans KR",sans-serif; --color-accent:#e9b1a8; --color-accent-100:oklch(0.97 0.012 30); --color-accent-200:oklch(0.94 0.025 30); --color-accent-300:oklch(0.89 0.045 30); --color-accent-400:oklch(0.84 0.06 30); --color-accent-500:#e9b1a8; --color-accent-600:oklch(0.72 0.075 30); --color-accent-700:oklch(0.55 0.085 30); --color-accent-800:oklch(0.42 0.075 30); --color-accent-900:oklch(0.3 0.055 30); }
+:root { --color-bg:#f3ecdd; --font-heading:"Gothic A1","IBM Plex Sans KR","Noto Sans KR",sans-serif; --font-body:"IBM Plex Sans KR","Noto Sans KR",sans-serif; --font-tech:"Chakra Petch","IBM Plex Sans KR",sans-serif; --color-accent:#e9b1a8; --color-accent-100:oklch(0.97 0.012 30); --color-accent-200:oklch(0.94 0.025 30); --color-accent-300:oklch(0.89 0.045 30); --color-accent-400:oklch(0.84 0.06 30); --color-accent-500:#e9b1a8; --color-accent-600:oklch(0.72 0.075 30); --color-accent-700:oklch(0.55 0.085 30); --color-accent-800:oklch(0.42 0.075 30); --color-accent-900:oklch(0.3 0.055 30); }
 .btn-primary { color:var(--color-accent-900); }
 .btn, .tag { white-space:nowrap; }
 .nav { position:sticky; top:0; z-index:50; background:var(--color-bg); padding-left:0; padding-right:0; }
 .nav-inner { flex:1; display:flex; align-items:center; gap:var(--space-4); max-width:1200px; margin:0 auto; padding:0 clamp(20px,5vw,72px); }
 .nav-links { display:flex; align-items:center; gap:var(--space-4); margin-left:auto; }
+[style*="--font-heading"] { font-weight:800 !important; }
+[style*="uppercase"] { font-family:var(--font-tech); }
 .nav-toggle, .nav-burger { display:none; }
 @media (max-width:900px) {
   .nav-burger { display:flex; flex-direction:column; align-items:center; justify-content:center; gap:5px; width:40px; height:40px; margin-left:4px; cursor:pointer; }
