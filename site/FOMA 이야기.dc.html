@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/modernist-f1cda495-2d04-4f66-8b52-eb0641f6cce6/styles.css">
+<script src="_ds/modernist-f1cda495-2d04-4f66-8b52-eb0641f6cce6/_ds_bundle.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&amp;family=Noto+Serif+KR:wght@500;600;700&amp;display=swap">
+<script src="image-slot.js"></script>
+<style>
+:root { --font-heading:"Noto Serif KR",serif; --font-body:"Archivo","Noto Sans KR",sans-serif; --color-accent:#e9b1a8; --color-accent-100:oklch(0.97 0.012 30); --color-accent-200:oklch(0.94 0.025 30); --color-accent-300:oklch(0.89 0.045 30); --color-accent-400:oklch(0.84 0.06 30); --color-accent-500:#e9b1a8; --color-accent-600:oklch(0.72 0.075 30); --color-accent-700:oklch(0.55 0.085 30); --color-accent-800:oklch(0.42 0.075 30); --color-accent-900:oklch(0.3 0.055 30); }
+.btn-primary { color:var(--color-accent-900); }
+.btn, .tag { white-space:nowrap; }
+body { margin:0; background:var(--color-bg); color:var(--color-text); font-family:var(--font-body); text-wrap:pretty; }
+a { color:var(--color-accent-700); }
+a:hover { color:var(--color-accent-900); }
+</style>
+</helmet>
+<nav class="nav">
+  <a class="nav-brand" href="FOMA 홈.dc.html" style="text-decoration:none;display:flex;align-items:center"><img src="uploads/FOMA_beta_5.webp" alt="FOMA — Forms Of Motors and Arts" style="height:56px;display:block;margin:-10px 0"></a>
+  <a href="FOMA 전시.dc.html" style="text-decoration:none">전시</a>
+  <a href="FOMA 컬렉션.dc.html" style="text-decoration:none">컬렉션</a>
+  <a href="FOMA 프로그램.dc.html" style="text-decoration:none">프로그램</a>
+  <a href="FOMA 소식.dc.html" style="text-decoration:none">소식</a>
+  <a href="FOMA 이야기.dc.html" aria-current="page" style="text-decoration:none;color:var(--color-accent-700);font-weight:600">FOMA 이야기</a>
+  <a href="FOMA 방문.dc.html" style="text-decoration:none">방문</a>
+  <a class="btn btn-primary" href="https://booking.naver.com" target="_blank" style="text-decoration:none">예약하기</a>
+</nav>
+<main style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,72px)" data-screen-label="FOMA 이야기">
+  <section style="padding:88px 0 56px;display:flex;flex-direction:column;align-items:flex-start;gap:20px;border-bottom:2px solid var(--color-divider)">
+    <span style="font-size:13px;letter-spacing:.08em;text-transform:uppercase;font-weight:600;color:var(--color-accent-700)">Form of Motors and Arts</span>
+    <blockquote style="font-family:var(--font-heading);font-weight:700;font-size:clamp(30px,3.8vw,52px);line-height:1.12;letter-spacing:-.01em;margin:0;max-width:26ch">“완성된 차보다,<br>차가 태어나는 과정이 아름답다”</blockquote>
+    <span style="font-size:15px;color:var(--color-neutral-700)">— 박종서 관장</span>
+  </section>
+  <section style="display:grid;grid-template-columns:1fr 1.2fr;gap:48px;align-items:center;padding:48px 0;border-bottom:1px solid var(--color-divider)">
+    <figure class="grayscale" style="margin:0">
+      <image-slot id="story-1" shape="rect" style="width:100%;height:280px" placeholder="박종서 관장 인물 사진"></image-slot>
+    </figure>
+    <div style="display:flex;flex-direction:column;gap:10px;align-items:flex-start">
+      <span style="font-size:13px;letter-spacing:.08em;text-transform:uppercase;font-weight:600;color:var(--color-accent-700)">01 · 사람</span>
+      <h2 style="font-family:var(--font-heading);font-weight:700;font-size:clamp(26px,3vw,38px);letter-spacing:-.01em;margin:0;line-height:1.08">35년의 자동차 디자이너</h2>
+      <p style="font-size:15px;line-height:1.7;margin:0;color:var(--color-neutral-700);max-width:52ch">포니에서 싼타페까지. 한국 자동차 디자인 1세대의 기록. 2016년 MOTOR TREND 인터뷰 발췌를 수록했습니다.</p>
+      <a href="FOMA 소식.dc.html" style="font-size:14px">인터뷰 전문 읽기 →</a>
+    </div>
+  </section>
+  <section style="display:grid;grid-template-columns:1.2fr 1fr;gap:48px;align-items:center;padding:48px 0;border-bottom:1px solid var(--color-divider)">
+    <div style="display:flex;flex-direction:column;gap:10px;align-items:flex-start">
+      <span style="font-size:13px;letter-spacing:.08em;text-transform:uppercase;font-weight:600;color:var(--color-accent-700)">02 · 철학</span>
+      <h2 style="font-family:var(--font-heading);font-weight:700;font-size:clamp(26px,3vw,38px);letter-spacing:-.01em;margin:0;line-height:1.08">잊혀진 과정의 이야기</h2>
+      <p style="font-size:15px;line-height:1.7;margin:0;color:var(--color-neutral-700);max-width:52ch">스케치, 도면, 클레이. 결과가 아닌 여정을 수집합니다. 자동차 한 대가 태어나기까지의 손끝의 흔적이 이 미술관의 소장품입니다.</p>
+    </div>
+    <figure class="grayscale" style="margin:0">
+      <image-slot id="story-2" shape="rect" style="width:100%;height:280px" placeholder="스케치 / 복원 도면 사진"></image-slot>
+    </figure>
+  </section>
+  <section style="display:grid;grid-template-columns:1fr 1.2fr;gap:48px;align-items:center;padding:48px 0">
+    <figure class="grayscale" style="margin:0">
+      <image-slot id="story-3" shape="rect" style="width:100%;height:280px" placeholder="미술관 건축 외관 사진"></image-slot>
+    </figure>
+    <div style="display:flex;flex-direction:column;gap:10px;align-items:flex-start">
+      <span style="font-size:13px;letter-spacing:.08em;text-transform:uppercase;font-weight:600;color:var(--color-accent-700)">03 · 공간</span>
+      <h2 style="font-family:var(--font-heading);font-weight:700;font-size:clamp(26px,3vw,38px);letter-spacing:-.01em;margin:0;line-height:1.08">숨 쉬는 패시브 건축</h2>
+      <p style="font-size:15px;line-height:1.7;margin:0;color:var(--color-neutral-700);max-width:52ch">항온·항습으로 작품을 지키는 미술관. 동우건축과의 협업으로 지어진 패시브 건축입니다.</p>
+    </div>
+  </section>
+  <section style="margin-top:24px;border-top:2px solid var(--color-divider);border-bottom:2px solid var(--color-divider);padding:20px 0;display:flex;align-items:center;gap:16px;flex-wrap:wrap">
+    <b style="font-family:var(--font-heading);font-size:20px;letter-spacing:-.01em;flex:1;min-width:240px">관람은 사전예약제로 운영됩니다</b>
+    <a class="btn btn-primary" href="https://booking.naver.com" target="_blank" style="text-decoration:none">방문 예약</a>
+  </section>
+  <footer style="border-top:2px solid var(--color-divider);margin-top:80px;padding:24px 0 48px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:13px;color:var(--color-neutral-700)">
+    <span>FOMA — Form of Motors and Arts · 경기 고양시 덕양구 향뫼로 91 · 02-3158-4661</span>
+    <span><a href="https://www.instagram.com/foma_kr" target="_blank">인스타그램 @foma_kr</a> · 사전예약제 · 월요일 휴관</span>
+  </footer>
+</main>
+</x-dc>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/modernist-f1cda495-2d04-4f66-8b52-eb0641f6cce6/styles.css">
+<script src="_ds/modernist-f1cda495-2d04-4f66-8b52-eb0641f6cce6/_ds_bundle.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&amp;family=Noto+Serif+KR:wght@500;600;700&amp;display=swap">
+<script src="image-slot.js"></script>
+<style>
+:root { --font-heading:"Noto Serif KR",serif; --font-body:"Archivo","Noto Sans KR",sans-serif; --color-accent:#e9b1a8; --color-accent-100:oklch(0.97 0.012 30); --color-accent-200:oklch(0.94 0.025 30); --color-accent-300:oklch(0.89 0.045 30); --color-accent-400:oklch(0.84 0.06 30); --color-accent-500:#e9b1a8; --color-accent-600:oklch(0.72 0.075 30); --color-accent-700:oklch(0.55 0.085 30); --color-accent-800:oklch(0.42 0.075 30); --color-accent-900:oklch(0.3 0.055 30); }
+.btn-primary { color:var(--color-accent-900); }
+.btn, .tag { white-space:nowrap; }
+body { margin:0; background:var(--color-bg); color:var(--color-text); font-family:var(--font-body); text-wrap:pretty; }
+a { color:var(--color-accent-700); }
+a:hover { color:var(--color-accent-900); }
+</style>
+</helmet>
+<nav class="nav">
+  <a class="nav-brand" href="FOMA 홈.dc.html" style="text-decoration:none;display:flex;align-items:center"><img src="uploads/FOMA_beta_5.webp" alt="FOMA — Forms Of Motors and Arts" style="height:56px;display:block;margin:-10px 0"></a>
+  <a href="FOMA 전시.dc.html" style="text-decoration:none">전시</a>
+  <a href="FOMA 컬렉션.dc.html" style="text-decoration:none">컬렉션</a>
+  <a href="FOMA 프로그램.dc.html" aria-current="page" style="text-decoration:none;color:var(--color-accent-700);font-weight:600">프로그램</a>
+  <a href="FOMA 소식.dc.html" style="text-decoration:none">소식</a>
+  <a href="FOMA 이야기.dc.html" style="text-decoration:none">FOMA 이야기</a>
+  <a href="FOMA 방문.dc.html" style="text-decoration:none">방문</a>
+  <a class="btn btn-primary" href="https://booking.naver.com" target="_blank" style="text-decoration:none">예약하기</a>
+</nav>
+<main style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,72px)" data-screen-label="프로그램">
+  <header style="padding:64px 0 40px;display:flex;flex-direction:column;gap:12px;border-bottom:2px solid var(--color-divider)">
+    <h1 style="font-family:var(--font-heading);font-weight:700;font-size:clamp(36px,4.5vw,60px);letter-spacing:-.01em;margin:0;line-height:1.05">프로그램</h1>
+    <p style="font-size:16px;line-height:1.6;margin:0 0 24px;color:var(--color-neutral-700);max-width:56ch">아카데미와 특강. 모집 중인 과정부터 안내합니다.</p>
+  </header>
+  <section style="display:flex;flex-direction:column;gap:24px;margin-top:40px">
+    <div style="border:2px solid var(--color-divider);padding:24px;display:grid;grid-template-columns:auto 1fr auto;gap:20px;align-items:center">
+      <span class="tag tag-accent">모집중</span>
+      <div style="display:flex;flex-direction:column;gap:4px">
+        <b style="font-family:var(--font-heading);font-size:22px;letter-spacing:-.01em">포니정 디자인 아카데미 5기</b>
+        <span style="font-size:14px;color:var(--color-neutral-700)">대학(원)생 · 무료 인재 프로그램 · 일정과 사전과제는 모집 공고 참조</span>
+      </div>
+      <a class="btn btn-primary" href="https://booking.naver.com" target="_blank" style="text-decoration:none">지원하기</a>
+    </div>
+    <div style="border:2px solid var(--color-divider);padding:24px;display:grid;grid-template-columns:auto 1fr auto;gap:20px;align-items:center">
+      <span class="tag tag-accent">모집중</span>
+      <div style="display:flex;flex-direction:column;gap:4px">
+        <b style="font-family:var(--font-heading);font-size:22px;letter-spacing:-.01em">포마아카데미 13 · 14기</b>
+        <span style="font-size:14px;color:var(--color-neutral-700)">초·중생 · 1년 과정 · 인텐시브 / 주니어 반</span>
+      </div>
+      <a class="btn btn-primary" href="https://booking.naver.com" target="_blank" style="text-decoration:none">신청하기</a>
+    </div>
+    <div style="border:2px solid var(--color-divider);padding:24px;display:grid;grid-template-columns:auto 1fr auto;gap:20px;align-items:center">
+      <span class="tag tag-outline">시즌 종료</span>
+      <div style="display:flex;flex-direction:column;gap:4px">
+        <b style="font-family:var(--font-heading);font-size:22px;letter-spacing:-.01em">디자인 마스터클래스</b>
+        <span style="font-size:14px;color:var(--color-neutral-700)">성인 특강 시리즈 · 2025 시즌 종료 · 다음 시즌 알림 신청</span>
+      </div>
+      <a class="btn btn-ghost" href="FOMA 소식.dc.html" style="text-decoration:none">알림 받기</a>
+    </div>
+  </section>
+  <section style="margin-top:64px;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px">
+    <figure style="margin:0;display:flex;flex-direction:column;gap:10px">
+      <div class="grayscale"><image-slot id="pg-1" shape="rect" style="width:100%;height:160px" placeholder="아카데미 수업 현장"></image-slot></div>
+      <figcaption style="font-size:13px;color:var(--color-neutral-700)">아카데미 현장</figcaption>
+    </figure>
+    <figure style="margin:0;display:flex;flex-direction:column;gap:10px">
+      <div class="grayscale"><image-slot id="pg-2" shape="rect" style="width:100%;height:160px" placeholder="수강생 작품"></image-slot></div>
+      <figcaption style="font-size:13px;color:var(--color-neutral-700)">수강생 작품</figcaption>
+    </figure>
+    <figure style="margin:0;display:flex;flex-direction:column;gap:10px">
+      <div><image-slot id="pg-3" shape="rect" style="width:100%;height:160px" src="uploads/pasted-1787278975050-0.png" placeholder="포마원 그랑프리 시상"></image-slot></div>
+      <figcaption style="font-size:13px;color:var(--color-neutral-700)">FOMA-1 디자인 그랑프리 · 무동력 모형차 레이싱</figcaption>
+    </figure>
+  </section>
+  <div style="margin-top:48px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;border-top:2px solid var(--color-divider);padding-top:20px">
+    <span style="font-size:14px;color:var(--color-neutral-700)">지난 프로그램 기록은 아카이브에 있습니다</span>
+    <a class="btn btn-secondary" href="FOMA 소식.dc.html" style="text-decoration:none">아카이브 →</a>
+  </div>
+  <footer style="border-top:2px solid var(--color-divider);margin-top:80px;padding:24px 0 48px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:13px;color:var(--color-neutral-700)">
+    <span>FOMA — Form of Motors and Arts · 경기 고양시 덕양구 향뫼로 91 · 02-3158-4661</span>
+    <span><a href="https://www.instagram.com/foma_kr" target="_blank">인스타그램 @foma_kr</a> · 사전예약제 · 월요일 휴관</span>
+  </footer>
+</main>
+</x-dc>
+</body>
+</html>
